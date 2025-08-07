@@ -1,0 +1,124 @@
+.mentor-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.mentor-profile-box {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.mentor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mentor-input-container {
+  position: relative;
+}
+
+ .mentor-form .mentor-input {
+  width: 90%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.mentor-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mentor-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Add this to your menprof.css file */
+
+@media only screen and (max-width: 768px) {
+  .mentor-container {
+    padding: 15px;
+  }
+
+  .mentor-profile-box {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .mentor-form {
+    width: 100%;
+  }
+
+  .mentor-input-container {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .mentor-input {
+    width: calc(100% - 40px); /* Account for the eye icon */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .mentor-button {
+    width: 80% !important;
+    margin-left: 20px !important;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+  }
+
+  h2, h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .mentor-profile-box p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+}
+
+/* For very small screens */
+@media only screen and (max-width: 480px) {
+  .mentor-container {
+    padding: 10px;
+  }
+
+  .mentor-input {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .mentor-button {
+    padding: 7px 10px !important;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}

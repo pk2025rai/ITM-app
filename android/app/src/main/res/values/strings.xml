@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ITM APP</string>
+    <string name="title_activity_main">ITM APP</string>
+    <string name="package_name">com.resolute.ITM</string>
+    <string name="custom_url_scheme">com.resolute.ITM</string>
+</resources>

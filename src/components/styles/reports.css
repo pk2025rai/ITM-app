@@ -1,0 +1,186 @@
+.reports-container {
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+.reports-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.reports-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Wrapper to align Team & Individual Reports side by side */
+.report-sections-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Each report block */
+.team-report,
+.individual-report {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.team-report {
+  height: 620px;
+}
+
+/* Charts inside each report */
+.charts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Each chart box (pie or bar) */
+.charts,
+.charts1 {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  flex: 1;
+  min-width: 200px;
+  max-width: 48%;
+  box-sizing: border-box;
+}
+.charts1 {
+  margin-top: 55px;
+}
+/* General text class */
+.individual {
+  font-size: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 900px) {
+  .report-sections-wrapper {
+    flex-direction: column;
+  }
+
+  .team-report,
+  .individual-report {
+    width: 100%;
+  }
+
+  .charts-wrapper {
+    flex-direction: column;
+  }
+
+  .charts {
+    width: 100%;
+    max-width: 100%;
+  }
+  .charts1 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .reports-container {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .reports-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .reports-container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .report-sections-wrapper {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+
+ 
+  .team-report, 
+
+  .individual-report {
+    width: 100%;
+    min-width: unset;
+    padding: 15px;
+    height: auto; /* Remove fixed height */
+  }
+
+  .team-report {
+    height: auto; /* Allow natural height */
+  }
+
+  .charts-wrapper {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .charts,
+
+  .charts1 {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 0;
+  }
+
+  .charts1 {
+    margin-top: 15px; /* Reduced margin */
+  }
+}
+
+/* Extra small devices (320px and below) */
+@media (max-width: 320px) {
+  .reports-container {
+    padding: 10px;
+  }
+
+  .reports-container h1 {
+    font-size: 1.1rem;
+  }
+
+  .reports-container h2 {
+    font-size: 1rem;
+  }
+
+
+  .team-report,
+
+  .individual-report {
+    padding: 12px 10px;
+  }
+
+
+  .charts,
+  .charts1 {
+    padding: 10px;
+  }
+}
+
+
